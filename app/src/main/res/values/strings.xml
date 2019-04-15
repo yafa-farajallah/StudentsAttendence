@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Student attendance</string>
+    //labels
+    <string name="name_label">Student name:</string>
+    <string name="id_label">Student id:</string>
+    <string name="course_label">Course name:</string>
+
+
+    <string name="Student_name">Student name</string>
+    <string name="Student_id">Student id</string>
+    <string name="course_name">course name</string>
+    <string name="course_id">course id</string>
+
+
+
+    //Buttons
+    <string name="Add_student">Add student </string>
+    <string name="Add_course">Add course</string>
+    <string name="List_courses">List all Courses</string>
+    <string name="List_students">List all students</string>
+
+
+</resources>

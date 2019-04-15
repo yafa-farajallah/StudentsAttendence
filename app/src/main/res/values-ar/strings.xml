@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حضور الطالب</string>
+    //labels
+    <string name="name_label">إسم الطالب:</string>
+    <string name="id_label">رقم الطالب:</string>
+    <string name="course_label">إسم المساق:</string>
+
+
+    <string name="Student_name">إسم الطالب</string>
+    <string name="Student_id">رقم الطالب</string>
+    <string name="course_name">إسم المساق</string>
+    <string name="course_id">رقم المساق</string>
+
+
+    //buttons
+    <string name="Add_student">أضِف الطالب</string>
+    <string name="Add_course">أضِف المساق</string>
+    <string name="List_courses">إعرض كل المساقات</string>
+    <string name="List_students">إعرض كل الطلاب</string>
+
+</resources>

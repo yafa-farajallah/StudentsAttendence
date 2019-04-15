@@ -1,0 +1,4 @@
+#Mon Apr 15 01:31:54 IDT 2019
+base.0=C\:\\Users\\17703\\Desktop\\android\\Student_Attend_13-4\\Studentattendance\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex
