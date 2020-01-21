@@ -29,21 +29,25 @@
         android:id="@+id/courseid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="@string/course_id"
-        android:layout_marginBottom="51dp"/>
+        android:layout_marginBottom="51dp"
+        />
     <Button
         android:id="@+id/addbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/Add_course"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/coloredbtn"/>
 
 <Button
         android:id="@+id/listAllBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/List_courses"/>
+        android:text="@string/List_courses"
+        android:background="@drawable/coloredbtn"/>
 
 </LinearLayout>

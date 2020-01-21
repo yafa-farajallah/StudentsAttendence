@@ -628,6 +628,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable coloredbtn
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -740,6 +741,8 @@ id middle
 id multiply
 id namelabel
 id never
+id newcid
+id newcname
 id none
 id normal
 id notification_background
@@ -790,6 +793,7 @@ id studentname
 id studentslist
 id studentslistTobeAdded
 id submenuarrow
+id submitBtn
 id submit_area
 id tabMode
 id tag_transition_group
@@ -915,10 +919,19 @@ string app_name
 string course_id
 string course_label
 string course_name
+string course_new_id
+string course_new_name
+string delete_course
 string id_label
 string name_label
+string no_data
 string search_menu_title
+string select_std_to_add
 string status_bar_notification_info_overflow
+string submit_changes
+string update_course
+string update_course_id
+string update_course_name
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -4,13 +4,16 @@
     <string name="name_label">Student name:</string>
     <string name="id_label">Student id:</string>
     <string name="course_label">Course name:</string>
+    <string name="no_data">No Entered data</string>
 
 
     <string name="Student_name">Student name</string>
     <string name="Student_id">Student id</string>
     <string name="course_name">course name</string>
     <string name="course_id">course id</string>
-
+    <string name="course_new_name">Enter the new name</string>
+    <string name="course_new_id">Enter the new id</string>
+    <string name="select_std_to_add">select student to be added to the course</string>
 
 
     //Buttons
@@ -18,6 +21,13 @@
     <string name="Add_course">Add course</string>
     <string name="List_courses">List all Courses</string>
     <string name="List_students">List all students</string>
+    <string name="update_course_name">Update the course name</string>
+    <string name="update_course_id">Update the course id</string>
+    <string name="submit_changes">Submit the changes</string>
+
+    //menu items
+    <string name="delete_course">Delete course</string>
+    <string name="update_course">Update course</string>
 
 
 </resources>

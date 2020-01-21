@@ -39,6 +39,16 @@ public class ListCoursesActivity extends AppCompatActivity {
         this.coursesList.setAdapter(coursesAdapter);
         databaseAdapter.close();
 
+        coursesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent2 = new Intent(getApplicationContext(), CourseStudents.class);
+                intent2.putExtra("courseid",courseid);
+
+                startActivity(intent2);
+            }
+        });
+
     }
 
 
@@ -73,10 +83,15 @@ public class ListCoursesActivity extends AppCompatActivity {
                 break;}
             case R.id.item2:
                 Intent intent = new Intent(getApplicationContext(), UpdateCourse.class);
+                intent.putExtra("oldid",courseid);
                 startActivity(intent);
                 break;
             case R.id.item3:
                 courses.remove(course_pos);
+                databaseAdapter.open();
+                databaseAdapter.deleteCourse(courseid);
+                databaseAdapter.close();
+                coursesAdapter.notifyDataSetChanged();
                 break;
         }
 

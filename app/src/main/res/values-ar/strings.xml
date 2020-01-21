@@ -5,12 +5,16 @@
     <string name="name_label">إسم الطالب:</string>
     <string name="id_label">رقم الطالب:</string>
     <string name="course_label">إسم المساق:</string>
+    <string name="no_data">لم تقم بإدخال البيانات</string>
 
 
     <string name="Student_name">إسم الطالب</string>
     <string name="Student_id">رقم الطالب</string>
     <string name="course_name">إسم المساق</string>
     <string name="course_id">رقم المساق</string>
+    <string name="course_new_name">أدخل الإسم الجديد</string>
+    <string name="course_new_id">أدخل الرقم الجديد</string>
+    <string name="select_std_to_add">إختر طالب لإضافته للمساق</string>
 
 
     //buttons
@@ -18,5 +22,13 @@
     <string name="Add_course">أضِف المساق</string>
     <string name="List_courses">إعرض كل المساقات</string>
     <string name="List_students">إعرض كل الطلاب</string>
+    <string name="update_course_name">حدِث اسم المساق</string>
+    <string name="update_course_id">حدِث رقم المساق</string>
+    <string name="submit_changes">أرسِل التغييرات</string>
+
+    //menu items
+    <string name="delete_course">إحذف المساق</string>
+    <string name="update_course">حدِث المساق</string>
+
 
 </resources>

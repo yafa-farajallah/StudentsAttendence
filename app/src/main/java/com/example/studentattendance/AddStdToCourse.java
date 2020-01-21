@@ -17,10 +17,10 @@ public class AddStdToCourse extends AppCompatActivity {
     int courseId,studentid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intent=getIntent();
-         courseId=intent.getIntExtra("courseid",-1);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_std_to_course);
+        Intent intent=getIntent();
+         courseId=intent.getIntExtra("courseid",-1);
         studentsList =findViewById(R.id.studentslistTobeAdded);
 
         this.databaseAdapter = new DatabaseAdapter(this);

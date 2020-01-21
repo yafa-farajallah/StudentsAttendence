@@ -64,10 +64,7 @@ public class DatabaseAdapter {
 
     public ArrayList<Students> getStudentsNotInTheCourse (int courseId){
 
-         Cursor cursor = this.database.query(SqLiteHelper.STUDENT_TABLE, StudentsColumns,STUDENT_ID+ "NOT IN ("+
-                 this.database.query(SqLiteHelper.ENROLLMENT_TABLE, new String []{STUDENT_ID},COURSE_ID+ "= " + courseId , null,
-                         null, null, null)+") ", null,
-                null, null, null);
+        Cursor cursor=database.rawQuery("select * from students where student_id not in (select student_id from enrollment where course_id= "+courseId+")",null);
 
         ArrayList<Students> students = new ArrayList<Students>();
         cursor.moveToFirst();
@@ -85,6 +82,29 @@ public class DatabaseAdapter {
         cursor.close();
         return students;
     }
+
+    public ArrayList<Students> getCourseStudents(int courseId){
+
+        Cursor cursor=database.rawQuery("select * from students where student_id in (select student_id from enrollment where course_id= "+courseId+")",null);
+
+        ArrayList<Students> students = new ArrayList<Students>();
+        cursor.moveToFirst();
+
+        while(!cursor.isAfterLast()){
+            String id = cursor.getString(0);
+            String name = cursor.getString(1);
+
+            Students student = new Students(Integer.parseInt(id), name);
+
+            students.add(student);
+            cursor.moveToNext();
+        }
+
+        cursor.close();
+        return students;
+    }
+
+
 
     public void addCourses(Courses course){
         ContentValues values = new ContentValues();
@@ -124,6 +144,8 @@ public class DatabaseAdapter {
         this.database.insert(SqLiteHelper.ENROLLMENT_TABLE, null, values);
     }
 
-
+    public void deleteCourse(int courseId){
+        database.delete(sqlHelper.COURSE_TABLE, sqlHelper.COURSE_ID + "=" + courseId, null);
+    }
 
 }
